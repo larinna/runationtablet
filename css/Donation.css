@@ -1,0 +1,499 @@
+html, body, h1,h2,h3,p {margin: 0px; padding: 0px;}
+
+html, body{
+	width:100%; 
+	height:100%; 
+	font-size:1em; 
+	font-family: "Helvetica Neue",Helvetica ,Arial, sans-serif;}
+
+body{
+	width:100%;
+	height:100%;
+	font-family: "AvenirLight", HelveticaBN, Arial, sans-serif;
+}
+
+
+
+
+div#PageContainer {
+	width:1024px;
+	height:768px;
+	float:left;
+	margin:auto;
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	box-shadow:0px 15px 100px #c4c4c4;
+	background:white;
+
+}
+
+
+header{
+	overflow: hidden;	
+	height:64px;
+	width:944px; 
+	float:right;
+	background: #53ccff;
+	
+}
+div#UserArea{
+	height:20px;
+	width: 944px;
+	float:left;
+	font-size: 0.75em;
+	margin-top:2px;
+	color: white;
+	text-align: center;
+
+
+}
+div#UserArea img{
+    float:right;
+    margin-left: 10px;
+    margin-top: 10px
+    width:45px;
+    height:13px;
+    position:relative;
+}
+
+
+
+
+div#NavBar{
+	width:  80px;
+	height: 768px;
+	float: left;
+	background: #3E4357;
+	font-size: 14px;
+	
+}
+
+div#NavBar div#Ipad{
+	width:80px;
+	height:64px;
+	float:left;
+	display:block;
+	position: relative;
+}
+
+div#Ipad img{
+    float:left;
+    margin-left: 5px;
+    margin-top: 4px;
+    width:42px;
+    height:13px;
+    position:relative;
+}
+
+  
+div#NavBar div#Icon{
+	width:80px;
+	height:80px;
+	float:left;
+	display:block;
+	
+}
+
+img#Setting{
+	margin-top: 180px;
+	margin-left: 28px;
+	cursor: wait;
+
+}
+
+
+
+div#Icon img{
+    float:left;
+   	margin-left: 25px;
+   	margin-top:15px;
+    width:30px;
+    height:30px;
+}
+
+div#Icon p{
+ 	float: left;
+ 	position:absolute;
+ 	text-align: center;
+ 	color:white;
+ 	width: 80px;
+ 	height:180px;
+ 	margin-top: 45px;
+}
+
+div#Icon:hover{
+    background-color:#5f6375;
+    cursor:pointer;
+
+}
+img#arrow{
+	width:10px;
+	height:15px;
+	float:left;
+	position:relative;
+	margin-left:8px;
+	margin-top:5px;
+
+}
+
+p#WelcomeInformation{
+	font-weight: normal;
+	text-align: center;
+	color:white;
+	margin-top:15px;
+}
+
+
+
+div#MainPart{
+	width:944px;
+	height:100%;
+	margin-left:80px;
+	font-size: 0.75em;
+	overflow: auto;
+
+}
+
+
+div#TopPart{
+	width: 100%;
+	height:220px;
+	float:left;
+	font-size: 0.80em;
+	overflow: hidden;
+	position: relative;
+}
+
+img#ipadbg{
+	width: 100%;
+	height:220px;
+	float:left;
+}
+
+div#Profile{
+	width: 150px;
+	height:150px;
+	float:left;
+	font-size: 1.15em;
+	text-align: center;
+	color:white;
+	position: absolute;
+	left: 42.5%;
+	top: 20%;
+	
+}
+
+
+
+
+div#Form{
+	width: 36%;
+	height: 45%;
+	margin-left:25%;
+	margin-right: 30%;
+	margin-top: 28%;
+	text-align: center;
+	position: absolute;
+	color: #3E4357;
+	
+}
+
+
+
+div.settingContent{
+	position: absolute;
+	margin-top: 230px;
+	width:45%;
+	margin-left: 28.6%;
+}
+.settingContent .textContent {
+    display:inline-block;
+    float:left;
+    width: 220px;
+    height: 40px;
+    line-height: 40px;
+    color: #3E4357;
+    margin-top: 23px;
+}
+
+.textContent label{
+	margin-left:10px;
+}
+
+
+input[type="checkbox"] { 
+    float:left;
+    opacity: 0;
+}
+
+/* Normal Track */
+input[type="checkbox"].ios-switch + div {
+    display:inline-block;
+    vertical-align:middle;
+    width: 40px;    
+    height: 20px;
+    border: 1px solid rgba(0,0,0,.4);
+    border-radius: 999px;
+    background-color: rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: .4s;
+    -webkit-transition-property: background-color, box-shadow;
+    box-shadow: inset 0 0 0 0px rgba(0,0,0,0.4);
+    margin: 0px 0.6em 0px 1.2em;
+}
+
+/* Big Track */
+input[type="checkbox"].bigswitch.ios-switch + div {
+    width: 47px;    
+    height: 22px;
+}
+
+/* Green Track */
+input[type="checkbox"].green.ios-switch:checked + div {
+    background-color: #00e359;
+    border: 1px solid rgba(0, 162, 63,1);
+    box-shadow: inset 0 0 0 10px rgba(0,227,89,1);
+}
+
+/* Normal Knob */
+input[type="checkbox"].ios-switch + div > div {
+    float: left;
+    width: 9px; 
+    height: 9px;
+    border-radius: inherit;
+    background: #ffffff;
+    -webkit-transition-timing-function: cubic-bezier(.54,1.85,.5,1);
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-property: transform, background-color, box-shadow;
+    -moz-transition-timing-function: cubic-bezier(.54,1.85,.5,1);
+    -moz-transition-duration: 0.4s;
+    -moz-transition-property: transform, background-color;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 0 1px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    margin-top: 1px;
+    margin-left: 1px;
+}
+
+/* Big Knob */
+input[type="checkbox"].bigswitch.ios-switch + div > div {
+    width: 20px; 
+    height: 20px;
+    margin-top: 1px;
+}
+
+/* Checked Big Knob (Blue Style) */
+input[type="checkbox"].bigswitch.ios-switch:checked + div > div {
+    -webkit-transform: translate3d(25px, 0, 0);
+    -moz-transform: translate3d(25px, 0, 0);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3), 0px 0px 0 1px rgba(8, 80, 172,1);
+}
+
+
+
+
+div#Form select{
+	margin-top: 5px;
+	margin-left:36px;
+	margin-bottom: 4px;
+	float: left;
+	text-align: center;
+	color: #3E4357;
+	width: 215px;
+	height: 25px;
+	display: block;
+}
+
+
+
+label{
+	float: left;
+	width: 81px;
+	text-align: right;
+	margin-top: 7px;
+	font-size: 1.1em;
+
+	
+
+}
+
+input.TextInput{
+	margin-top: 5px;
+	width: 210px;
+	height: 19px;
+	
+
+}
+
+div#button{
+	text-align: center;
+}
+div#MakePayment{
+	margin-top: 9%;
+	margin-bottom: 5%;
+	margin-left: 21.5%;
+}
+
+div#MakePayment span{
+	color: white;
+	text-decoration: none;
+	padding: 10px 64px;
+	position: relative;
+	background: #ffc223;
+	cursor: pointer;
+
+}
+
+div#PAYPAL{
+	margin-top: 10%;
+	margin-left: 22%;
+
+}
+
+div#PAYPAL a{
+	text-decoration: none;
+	padding: 10px 92px;
+    background:#53ccff;
+    color:white;
+   
+}
+div#PAYPAL a:focus {
+    background:#888888;
+    color:aqua;
+
+}
+
+div#Smallamount{
+	text-align: center;
+	width: 210px;
+	height: 43px;
+	margin-left: 32.5%;
+	position: relative;
+}
+div#amount1{
+	width: 50px;
+	height: 30px;
+	background: #efefef;
+	border: solid 1px grey;
+	text-align: center;
+	color: #1f1f1f;
+	position: absolute;
+	left: 0px;
+	bottom: 5px;
+	cursor: pointer;
+}
+
+div#amount2{
+	width: 50px;
+	height: 30px;
+	background: #efefef;
+	border: solid 1px grey;
+	text-align: center;
+	color: #1f1f1f;
+	position: absolute;
+	left: 50%;
+	bottom: 5px;
+	margin-left: -25px;
+	cursor: pointer;
+}
+
+div#amount3{
+	width: 50px;
+	height: 30px;
+	background: #efefef;
+	border: solid 1px grey;
+	text-align: center;
+	color: #1f1f1f;
+	position: absolute;
+	right: 0px;
+	bottom: 5px;
+	cursor: pointer;
+}
+
+span.amountNumber{
+	display: block;
+	margin-top: 8px;
+}
+
+div#amount1:focus{
+    background:#ffc223;
+    color:aqua;
+
+}
+
+div#BackgroundGreyOut{
+	width:1024px;
+	height:768px;
+	z-index: 5;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-top: -384px;
+	margin-left: -512px;
+	background: black;
+	opacity: 0.8;
+}
+
+div#popup{
+	position: fixed;
+	margin-left: -100px;
+	left: 50%;
+	width: 250px;
+	height: 160px;
+	top: 50%;
+	margin-top: -75px;
+	z-index: 5;
+	background: white;
+}
+
+div#popupText{
+	width: 230px;
+	height: 92px;
+	margin: 10px auto;
+}
+
+div#Confirm{
+	width: 98px;
+	height: 26px;
+	float: left;
+	margin-bottom: 10px;
+	text-align: center;
+	border: solid 1px white;
+	background: #ffc223;
+	padding-top: 10px;
+	cursor: pointer;
+	margin-left: 15px;
+	color: white;
+	text-decoration:none
+}
+
+div#Confirm:focus {
+    background:#888888;
+    color:aqua;
+}
+
+div#Cancel{
+	width: 98px;
+	height: 26px;
+	float: left;
+	text-align: center;
+	border: solid 1px white;
+	background: #ffc223;
+	padding-top: 10px;
+	cursor: pointer;
+	margin-left: 20px;
+	color: white;
+	text-decoration:none;
+}
+
+div#Cancel:focus {
+    background:#888888;
+    color:aqua;
+}
+
+
+@font-face{
+    font-family:AvenirLight;
+    src:url(AvenirLight.otf);
+}

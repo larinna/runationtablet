@@ -1,0 +1,223 @@
+html, body, h1,h2,h3,p {margin: 0px; padding: 0px;}
+
+html, body{width:100%; 
+	height:100%; 
+	font-size:1em; 
+	font-family: "AvenirLight",Helvetica ,Arial, sans-serif;}
+
+
+
+div#PageContainer {
+	width:1024px;
+	height:768px;
+	float:left;
+	margin:auto;
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	box-shadow:0px 15px 100px #c4c4c4;
+	background:#F4F4F4;
+}
+
+header{
+	overflow: hidden;	
+	height:64px;
+	width:944px; 
+	float:right;
+	background: #53ccff;
+	
+}
+
+div#UserArea{
+	height:20px;
+	width: 944px;
+	float:left;
+	font-size: 0.75em;
+	margin-top:2px;
+	color: white;
+	text-align: center;
+
+
+}
+div#UserArea img{
+    float:right;
+    margin-left: 10px;
+    margin-top: 10px
+    width:45px;
+    height:13px;
+    position:relative;
+}
+
+
+div#NavBar{
+	width:  80px;
+	height: 768px;
+	float: left;
+	background: #3E4357;
+	font-size: 14px;
+	
+}
+
+div#NavBar div#Ipad{
+	width:80px;
+	height:64px;
+	float:left;
+	display:block;
+	position: relative;
+}
+
+div#Ipad img{
+    float:left;
+    margin-left: 5px;
+    margin-top: 4px;
+    width:42px;
+    height:13px;
+    position:relative;
+}
+
+  
+div#NavBar div#Icon{
+	width:80px;
+	height:80px;
+	float:left;
+	display:block;
+
+}
+
+img#Setting{
+	margin-top: 180px;
+	margin-left: 28px;
+	cursor: wait;
+
+}
+
+
+
+div#Icon img{
+    float:left;
+   	margin-left: 25px;
+   	margin-top:15px;
+    width:30px;
+    height:30px;
+}
+
+div#Icon p{
+ 	float: left;
+ 	position:absolute;
+ 	text-align: center;
+ 	color:white;
+ 	width: 80px;
+ 	height:180px;
+ 	margin-top: 45px;
+}
+
+div#Icon:hover{
+    background-color:#5f6375;
+    cursor:pointer;
+
+}
+
+
+
+div#mainPart{
+	width:92%;
+	height:92%;
+	margin-left:80px;
+	font-size: 1.15em;
+	overflow: scroll;
+}
+
+
+div#OneNews{
+	width: 91%;
+	height: 15.5%;
+	float: left;
+	text-align: center; 
+	background:white;
+	padding: 30px;
+	margin-left:10px;
+	margin-top:5px;
+	text-decoration: none;
+	color:#3E4357;
+	border-bottom: solid 2px #F1F1F1;
+	cursor:wait;
+
+}
+
+img#newsPicture{
+	width: 300px;
+	height: 100px;
+	float:left;
+	margin-top:0px;
+	margin-left:20px;
+	cursor: wait;
+}
+
+div#OneNews a{
+    text-decoration:none;
+    color:#3E4357;
+    width:800px;
+    height:400px; 
+    cursor: wait; 
+}
+
+div#OneNews:focus {
+    background-color:#f0fbff;
+    color: #07bdff;
+}
+div#OneNews a:focus{
+    background-color:#f0fbff;
+    color: #07bdff;
+}
+
+
+
+div.comment{
+	
+	float: left;
+	width: 100px;
+	height:25px;
+
+}
+
+img.commentImage{
+	display: block;
+	float: left;
+	width: 20px;
+	height: 20px;
+}
+
+span.commentTitle{
+	font-size: 10px;
+	display: block;
+	float: left;
+	margin-top: 4px;
+	margin-left: 5px;
+}
+
+
+span.FacebookTitle{
+	font-size: 10px;
+	display: block;
+	float: right;
+	margin-top: 5px;
+	margin-left:0px;
+	cursor: wait;
+
+}
+img.Facebook{
+	display: block;
+	width: 25px;
+	height: 25px;
+	float: right;
+	margin-right: 10px;
+	margin-bottom: 4px;
+}
+
+
+@font-face{
+    font-family:AvenirLight;
+    src:url(AvenirLight.otf);
+}
